@@ -1,0 +1,16 @@
+#spring:
+#  application:
+#    name: paache
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: ${NACOS_HOST:nacos-puppy}:${NACOS_PORT:8848}
+#        group: ${NACOS_GROUP:local}
+#      config:
+#        file-extension: yml
+#        group: ${NACOS_GROUP:local}
+#        server-addr: ${NACOS_HOST:nacos-puppy}:${NACOS_PORT:8848}
+#        extension-configs:
+#          - group: ${spring.cloud.nacos.config.group}
+#            dataId: paache.yml
+#            refresh: true
